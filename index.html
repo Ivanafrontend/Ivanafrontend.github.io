@@ -182,16 +182,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-
+          <form action="https://formspree.io/your@email.com" method="POST">
+  
           <span id="basic-addon1">NAME</span>
           <div class="input-group mb-3">
             <div class="input-group-prepend"></div>
-            <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1"></div>
+            <input type="text"  name="name" class="form-control"  aria-label="Username" aria-describedby="basic-addon1"></div>
 
           <span id="basic-addon1">EMAIL</span>
           <div class="input-group mb-3">
             <div class="input-group-prepend"></div>
-            <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1"></div>
+            <input type="text" name="_replyto" class="form-control"  aria-label="Username" aria-describedby="basic-addon1"></div>
 
           <span id="basic-addon1">MESSAGE</span>
           <div class="input-group">
@@ -200,9 +201,11 @@
           </div>
           <div class="bot text-center">
             <br>
-            <button class="button">
+            <input class="button" type="submit" value="Send">
+            
               <span>SEND</span>
             </button>
+            </form>
           </div>
         </div>
       </div>
